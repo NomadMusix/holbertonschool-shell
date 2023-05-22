@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 # The script displays username. user id, and home directory path for the user
 FILENAME="/etc/passwd"
 while IFS=: read -r username password userid groupid comment homedir cmdshell
