@@ -1,2 +1,2 @@
 #!/bin/bash
-DECIMAL=$1 | echo "obase=16; $DECIMAL" | bc 
+DECIMAL=$( printf "%DECIMAL" 85) ; echo $DECIMAL 
