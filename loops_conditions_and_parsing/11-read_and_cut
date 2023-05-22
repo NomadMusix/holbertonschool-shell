@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # The script displays username. user id, and home directory path for the user
 FILENAME="/etc/passwd"
-while IFS=: read -r username password userid groupid comment homedir cmdshell
+
+
+while read LINE
 do
-    echo "$username, $userid, $comment $homedir"
-done < $FILENAME
+	    echo "$LINE" | cut -d ":" -f1,3,6
+    done < "$FILE"
