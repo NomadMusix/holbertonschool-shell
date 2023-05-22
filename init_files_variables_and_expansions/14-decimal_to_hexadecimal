@@ -1,2 +1,2 @@
 #!/bin/bash
-DECIMAL=$( printf "%DECIMAL" 85) ; echo $DECIMAL 
+printf '%x\n' $DECIMAL 
